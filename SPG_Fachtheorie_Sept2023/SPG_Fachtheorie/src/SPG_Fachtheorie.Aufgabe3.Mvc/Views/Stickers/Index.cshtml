@@ -1,0 +1,29 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model CustomerStickerDto
+
+<p>Name: @Model.Name</p>
+<p>Email: @Model.Email</p>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Kennzeichen</th>
+            <th>Art</th>
+            <th>Kaufdatum</th>
+            <th>Gültig von</th>
+            <th>Gültig bis</th>
+            <th>Preis</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (StickerDto s in Model.StickerList) {
+            <tr>
+                <td>@s.Numberplate</td>
+                <td>@s.StickerType</td>
+                <td>@s.PurchaseDate</td>
+                <td>@s.ValidFrom</td>
+                <td>@s.ValidUntil</td>
+                <td>@s.Price</td>                
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model VehicleStickerDto
+<div class="mb-3">
+    <h5>
+        Wähle einen Customer aus:
+    </h5>
+    <form method="post">
+        <div class="form-group">           
+            @Html.LabelFor(model => model.VehicleGuid, "VehicleInfo")
+            <div class="col-md-10">
+                @Html.DropDownList("VehicleGuid")
+                @Html.ValidationMessageFor(model => model.VehicleGuid)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StickerTypeGuid, "StickerType")
+            <div class="col-md-10">
+                @Html.DropDownList("StickerTypeGuid")
+                @Html.ValidationMessageFor(model => model.StickerTypeGuid)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ValidFrom)
+                <div class="col-md-10">
+                @Html.EditorFor(model => model.ValidFrom)
+                @Html.ValidationMessageFor(model => model.ValidFrom)
+                </div>
+            </div>
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>

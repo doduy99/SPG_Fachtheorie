@@ -1,0 +1,30 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model IQueryable<CustomerDto>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Nachname</th>
+            <th>Vorname</th>
+            <th>Gekaufte Vignetten</th>
+            <th>Registrierte Fahrzeuge</th>
+            <th>Aktionen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CustomerDto c in Model) {
+            <tr>
+                <td>@c.Lastname</td>
+                <td>@c.Firstname</td>
+                <td>@c.SumStickers</td>
+                <td>@c.SumVehicles</td>
+                <td>
+                    [<a href="Stickers/Add/@c.Guid">Vignette kaufen</a>][<a href="Stickers/Index/@c.Guid">Gekaufte Vignetten anzeigen</a>]
+                    @* @foreach (LinkDto l in c.Links) {
+                        <a href="/advertisement/details/@l.Id">@l.Link</a>
+                    }*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
