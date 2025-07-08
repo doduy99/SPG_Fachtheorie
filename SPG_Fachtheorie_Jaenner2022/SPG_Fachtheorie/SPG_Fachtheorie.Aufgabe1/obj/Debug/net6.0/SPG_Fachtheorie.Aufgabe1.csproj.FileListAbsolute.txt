@@ -1,0 +1,12 @@
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\bin\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.deps.json
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\bin\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.dll
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\bin\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.pdb
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.csproj.AssemblyReference.cache
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.AssemblyInfoInputs.cache
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.AssemblyInfo.cs
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.csproj.CoreCompileInputs.cache
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.dll
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\refint\SPG_Fachtheorie.Aufgabe1.dll
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\SPG_Fachtheorie.Aufgabe1.pdb
+C:\Users\ddotu\Desktop\POS\Ueben\Jan2022\SPG_Fachtheorie\SPG_Fachtheorie.Aufgabe1\obj\Debug\net6.0\ref\SPG_Fachtheorie.Aufgabe1.dll

@@ -1,0 +1,25 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model IQueryable<AppointmentDto>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(AppointmentDto a in Model) {
+            <tr>
+                <td>@a.FirstName</td>
+                <td>@a.LastName</td>
+                <td>@a.Date</td>
+                <td>@a.Location</td>
+                <td>@a.State</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="https://localhost:7261/Offer">Back to Offer</a>

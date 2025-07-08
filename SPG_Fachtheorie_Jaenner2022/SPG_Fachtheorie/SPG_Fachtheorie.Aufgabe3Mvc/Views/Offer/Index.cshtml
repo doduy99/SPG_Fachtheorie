@@ -1,0 +1,31 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model IQueryable<OfferDto>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Term</th>
+            <th>Name</th>
+            <th>EducationType</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Anzahl</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(OfferDto o in Model) {
+            <tr>
+                <td>@o.Term</td>
+                <td>@o.Name</td>
+                <td>@o.EducationType</td>
+                <td>@o.From</td>
+                <td>@o.To</td>
+                <td>@o.Anzahl</td>
+                <td><a href="Offer/Detail/@o.Id">Detail</a> | <a href="Offer/Edit/@o.Id">Edit</a> | <a href="Offer/Delete/@o.Id">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="Offer/Add">Add Offer</a>
