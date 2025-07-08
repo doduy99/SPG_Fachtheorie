@@ -1,0 +1,21 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model IQueryable<PlaylistDto>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Anzahl</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(PlaylistDto pl in Model) {
+            <tr>
+                <td>@pl.Name</td>
+                <td>@pl.UserName</td>
+                <td>@pl.Anzahl</td>
+            </tr>
+        }
+    </tbody>
+</table>

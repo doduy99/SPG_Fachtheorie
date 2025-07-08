@@ -1,0 +1,26 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model IQueryable<CustomerDto>
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>CompanyName</th>
+            <th>Links</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(CustomerDto c in Model) {
+            <tr>
+                <td>@c.FirstName</td>
+                <td>@c.LastName</td>
+                <td>@c.CompanyName</td>
+                <td>@foreach(LinkDto l in c.Links) {
+                    <a href="/advertisement/details/@l.Id">@l.Link</a> }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/advertisement/create">Add Advertisement</a>

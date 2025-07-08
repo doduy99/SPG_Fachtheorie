@@ -1,0 +1,79 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Domain;
+@model Advertisement
+
+
+
+<div class="mb-3">
+    <h5>
+        Wähle einen Customer aus:
+    </h5>
+    <form method="post">
+        <div class="form-group">
+            @*<label class="control-label col-md-2" for="Customer">Customer</label>*@
+            @Html.LabelFor(model => model.CustomerId, "Customer", htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.DropDownList("CustomerId")
+                @*@Html.DropDownListFor(model => model.CustomerId, ViewBag.CustomerId as IEnumerable<SelectListItem>, new{@class ="form-control"})*@
+                @Html.ValidationMessageFor(model => model.CustomerId)
+            </div>
+        </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductName)
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ProductName)
+                    @Html.ValidationMessageFor(model => model.ProductName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Production)
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Production)
+                    @Html.ValidationMessageFor(model => model.Production)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Length)
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Length)
+                    @Html.ValidationMessageFor(model => model.Length)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MinPlayTime)
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MinPlayTime)
+                    @Html.ValidationMessageFor(model => model.MinPlayTime)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.CostsPerPlay)
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CostsPerPlay)
+                    @Html.ValidationMessageFor(model => model.CostsPerPlay)
+                </div>
+            </div>
+            @*<div class="form-group">
+                @Html.LabelFor(model => model.Id)
+                <div class="col-sm-10">
+                    @Html.EditorFor(model => model.Id)
+                    @Html.ValidationMessageFor(model => model.Id)
+                </div>
+            </div>*@
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>        
+    </form>
+</div>
+@*@section Scripts {
+        await @Html.RenderPartialAsync("_ValidationScriptsPartial");
+}*@
+
+

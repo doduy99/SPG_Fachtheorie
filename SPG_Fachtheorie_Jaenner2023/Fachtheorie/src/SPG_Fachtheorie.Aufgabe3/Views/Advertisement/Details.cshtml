@@ -1,0 +1,31 @@
+﻿@using SPG_Fachtheorie.Aufgabe2.Dto;
+@model AdvertisementDto
+
+<table class="table table-sm">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Product Name</th>
+        <th>Customer</th>
+        <th>Production</th>
+        <th>Length</th>
+        <th>MinPlayTime</th>
+        <th>CostsPerPlay</th>
+        <th>Number of ListenedItems</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>@Model.Id</td>
+        <td>@Model.ProductName</td>
+        <td>@Model.Customer</td>
+        <td>@Model.Production</td>
+        <td>@Model.Length</td>
+        <td>@Model.MinPlayTime</td>
+        <td>@Model.CostsPerPlay</td>
+        <td>@Model.NumberOfListenedItems</td>
+    </tr>
+
+    </tbody>    
+    
+</table>
